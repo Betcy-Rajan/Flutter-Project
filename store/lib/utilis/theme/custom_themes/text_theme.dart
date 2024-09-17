@@ -3,58 +3,58 @@ import 'package:flutter/material.dart';
 class TTextTheme {
   TTextTheme._();
   static TextTheme lightTheme = TextTheme(
-    headlineLarge: TextStyle(
+    headlineLarge: const TextStyle(
       fontSize: 32,
       fontWeight: FontWeight.bold,
       color: Colors.black,
     ),
-     headlineMedium: TextStyle(
+     headlineMedium: const TextStyle(
       fontSize: 24,
       fontWeight: FontWeight.w600,
       color: Colors.black,
     ),
-    headlineSmall: TextStyle(
+    headlineSmall: const TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.w600,
       color: Colors.black,
     ),
 
-    titleLarge: TextStyle().copyWith(
+    titleLarge: const TextStyle().copyWith(
       fontSize: 16,
       fontWeight: FontWeight.w600,
       color: Colors.black,
     ),
-    titleMedium: TextStyle().copyWith(
+    titleMedium: const TextStyle().copyWith(
       fontSize: 16,
       fontWeight: FontWeight.w500,
       color: Colors.black,
     ),
-    titleSmall: TextStyle().copyWith(
+    titleSmall: const TextStyle().copyWith(
       fontSize: 14,
       fontWeight: FontWeight.w500,
       color: Colors.black,
     ),
-    bodyLarge: TextStyle().copyWith(
+    bodyLarge: const TextStyle().copyWith(
       fontSize: 14,
       fontWeight: FontWeight.w500,
       color: Colors.black,
     ),
-    bodyMedium: TextStyle().copyWith(
+    bodyMedium: const TextStyle().copyWith(
       fontSize: 14,
       fontWeight: FontWeight.normal,
       color: Colors.black,
     ),
-    bodySmall: TextStyle().copyWith(
+    bodySmall: const TextStyle().copyWith(
       fontSize: 12,
       fontWeight: FontWeight.w500,
       color: Colors.black.withOpacity(0.5),
     ),
-    labelLarge: TextStyle().copyWith(
+    labelLarge: const TextStyle().copyWith(
       fontSize: 12,
       fontWeight: FontWeight.normal,
       color: Colors.black,
     ),
-    labelMedium: TextStyle().copyWith(
+    labelMedium: const TextStyle().copyWith(
       fontSize: 12,
       fontWeight: FontWeight.normal,
       color: Colors.black.withOpacity(0.5),
@@ -63,58 +63,58 @@ class TTextTheme {
 
 
   static TextTheme darkTheme = TextTheme(
-     headlineLarge: TextStyle(
+     headlineLarge: const TextStyle(
       fontSize: 32,
       fontWeight: FontWeight.bold,
       color: Colors.white,
     ),
-     headlineMedium: TextStyle(
+     headlineMedium: const TextStyle(
       fontSize: 24,
       fontWeight: FontWeight.w600,
       color: Colors.white,
     ),
-    headlineSmall: TextStyle(
+    headlineSmall: const TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.w600,
       color: Colors.white,
     ),
 
-    titleLarge: TextStyle().copyWith(
+    titleLarge: const TextStyle().copyWith(
       fontSize: 16,
       fontWeight: FontWeight.w600,
       color: Colors.white,
     ),
-    titleMedium: TextStyle().copyWith(
+    titleMedium: const TextStyle().copyWith(
       fontSize: 16,
       fontWeight: FontWeight.w500,
       color: Colors.white,
     ),
-    titleSmall: TextStyle().copyWith(
+    titleSmall: const TextStyle().copyWith(
       fontSize: 14,
       fontWeight: FontWeight.w500,
       color: Colors.white,
     ),
-    bodyLarge: TextStyle().copyWith(
+    bodyLarge: const TextStyle().copyWith(
       fontSize: 14,
       fontWeight: FontWeight.w500,
       color: Colors.white,
     ),
-    bodyMedium: TextStyle().copyWith(
+    bodyMedium: const TextStyle().copyWith(
       fontSize: 14,
       fontWeight: FontWeight.normal,
       color: Colors.white,
     ),
-    bodySmall: TextStyle().copyWith(
+    bodySmall: const TextStyle().copyWith(
       fontSize: 12,
       fontWeight: FontWeight.w500,
       color: Colors.white.withOpacity(0.5),
     ),
-    labelLarge: TextStyle().copyWith(
+    labelLarge: const TextStyle().copyWith(
       fontSize: 12,
       fontWeight: FontWeight.normal,
       color: Colors.white,
     ),
-    labelMedium: TextStyle().copyWith(
+    labelMedium: const TextStyle().copyWith(
       fontSize: 12,
       fontWeight: FontWeight.normal,
       color: Colors.white.withOpacity(0.5),

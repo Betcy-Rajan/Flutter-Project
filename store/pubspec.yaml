@@ -119,15 +119,21 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
 
+  # Splash screen package
+  flutter_native_splash: ^2.4.1
+
   # Utility packages
   http: ^1.1.0
   intl: ^0.18.1
   logger: ^2.0.1
   url_launcher: ^6.3.0
+  smooth_page_indicator: ^1.2.0+3
+ 
 
   # State management
   get: ^4.6.5
   get_storage: ^2.1.1
+  iconsax: ^0.0.8
 
 dev_dependencies:
   flutter_test:
@@ -137,9 +143,9 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/on_boarding_images/
+     
 
   # fonts:
   #   - family: Schyler

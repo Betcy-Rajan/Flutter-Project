@@ -37,14 +37,15 @@ class TDeviceUtils {
   static double getNavigationBarHeight(BuildContext context) {
     return MediaQuery.of(context).padding.bottom;
   }
-  static double getAppBarHeight(BuildContext context) {
-    return AppBar().preferredSize.height;
-  }
-  static double getBottomNavigationBarHeight(BuildContext context) {
+  
+  static double getBottomNavigationBarHeight() {
     return kBottomNavigationBarHeight;
   }
   static double getkeyboardHeight(BuildContext context) {
     return MediaQuery.of(context).viewInsets.bottom;
+  }
+  static double getAppBarHeight() {
+    return kToolbarHeight;
   }
   static Future<bool> isKeyboardVisible(BuildContext context) async {
    final viewInsets = MediaQuery.of(context).viewInsets;
@@ -58,12 +59,12 @@ class TDeviceUtils {
       return false;
     }
   }
-  static void launchUrl(String url) async {
-    if (await canLaunchUrlString(url)) {
-      await launchUrlString(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
+  // static void launchUrl(String url) async {
+  //   if (await canLaunchUrlString(url)) {
+  //     await launchUrlString(url);
+  //   } else {
+  //     throw 'Could not launch $url';
+  //   }
+  // }
   
 }
