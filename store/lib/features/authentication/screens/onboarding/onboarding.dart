@@ -5,13 +5,9 @@ import 'package:store/features/authentication/screens/onboarding/widgets/onboard
 import 'package:store/features/authentication/screens/onboarding/widgets/onboarding_next.dart';
 import 'package:store/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
 import 'package:store/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:store/utilis/constants/colors.dart';
+
 import 'package:store/utilis/constants/image_strings.dart';
-import 'package:store/utilis/constants/sizes.dart';
 import 'package:store/utilis/constants/text_strings.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:store/utilis/device/device_utility.dart';
-import 'package:store/utilis/helpers/helper_functions.dart';
 
 
 class OnBoardingScreen extends StatelessWidget {
