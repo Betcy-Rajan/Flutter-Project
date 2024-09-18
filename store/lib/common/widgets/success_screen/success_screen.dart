@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 import 'package:store/common/styles/spacing_styles.dart';
-import 'package:store/features/authentication/screens/login/login.dart';
-import 'package:store/utilis/constants/image_strings.dart';
+
+
 import 'package:store/utilis/constants/sizes.dart';
 import 'package:store/utilis/constants/text_strings.dart';
 import 'package:store/utilis/helpers/helper_functions.dart';
@@ -11,7 +11,9 @@ import 'package:store/utilis/helpers/helper_functions.dart';
 
 
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key});
+  const SuccessScreen({super.key, required this.title, required this.subtitle, required this.image, required this.onPressed});
+  final String title,subtitle,image;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -22,22 +24,20 @@ class SuccessScreen extends StatelessWidget {
           child: Column(
             children: [
              ///image
-              Image(image: const AssetImage(TImages.staticSuccessIllustration),width: THelperFunctions.screenWidth()*0.6,),
+              Image(image:  AssetImage(image),width: THelperFunctions.screenWidth()*0.6,),
               const SizedBox(height: TSizes.spaceBtwSections,),
 
               ///title and subtitle
                
-              Text(TTexts.yourAccountCreatedTitle, style: Theme.of(context).textTheme.headlineMedium,textAlign: TextAlign.center,),
+              Text(title, style: Theme.of(context).textTheme.headlineMedium,textAlign: TextAlign.center,),
               const SizedBox(height: TSizes.spaceBtwItems,),
-              Text(TTexts.yourAccountCreatedSubTitle, style: Theme.of(context).textTheme.labelMedium,textAlign: TextAlign.center,),
+              Text(subtitle, style: Theme.of(context).textTheme.labelMedium,textAlign: TextAlign.center,),
               const SizedBox(height: TSizes.spaceBtwSections,),
               ///button
                SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {
-                    Get.to(() => const LoginScreen());
-                  },
+                  onPressed: onPressed,
                   child: const Text(TTexts.tContinue),
                 ),
               ),
