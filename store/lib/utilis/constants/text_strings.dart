@@ -10,4 +10,9 @@ class TTexts {
   //home
   static const String homeAppbarTitle = 'Home';
   static const String homeAppbarSubTitle = 'Home';
+
+  static const String loginTitle = 'Welcome Back!';
+  static const String loginSubTitle = 'Login to your account';
+
+  static const String orSignInWith = 'Or Sign in with';
 }
