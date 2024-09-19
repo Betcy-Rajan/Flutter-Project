@@ -1,9 +1,5 @@
-
 import 'package:flutter/material.dart';
-
 import 'package:store/common/styles/spacing_styles.dart';
-
-
 import 'package:store/utilis/constants/sizes.dart';
 import 'package:store/utilis/constants/text_strings.dart';
 import 'package:store/utilis/helpers/helper_functions.dart';
