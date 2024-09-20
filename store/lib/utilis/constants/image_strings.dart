@@ -50,6 +50,8 @@ class TImages {
 
   //Docer   Animation
   static const String docerAnimation = "assets/images/animations/141594-animation-of-docer.json";
+  static const String successfullyRegistrationAnimation = "assets/images/animations/72462-check-register.json";
+  static const String successEmailVerification ="assets/images/animations/141397-loading-juggle.json";
 
   // -- Products
   static const String productImage1 = "assets/images/products/nike-shoes.png";
