@@ -5,13 +5,16 @@ Overview
 This project is a Flutter-based e-commerce application aimed at providing a modern and seamless shopping experience. The app will allow users to browse products, make purchases, and manage their accounts through intuitive and well-designed interfaces. It is built with the goal of ensuring smooth user interactions, from login to checkout.
 
 Features
+
 Login/Signup:
+
 A fully designed authentication flow, including:
+
 Login screen with form validation.
-Signup screen for new users.
-Password recovery (Forgot Password) functionality.
-Email verification after signup.
-Success screens for completed actions (e.g., successful registration, password reset).
+1) Signup screen for new users.
+2) Password recovery (Forgot Password) functionality.
+3) Email verification after signup.
+4) Success screens for completed actions (e.g., successful registration, password reset).
 
 Sections Completed
 1. Login/Signup Design
