@@ -48,6 +48,9 @@ class TImages {
   static const String onBoardingImage2 = "assets/images/on_boarding_images/sammy-line-shopping.gif";
   static const String onBoardingImage3 = "assets/images/on_boarding_images/sammy-line-delivery.gif";
 
+  //Docer   Animation
+  static const String docerAnimation = "assets/images/animations/141594-animation-of-docer.json";
+
   // -- Products
   static const String productImage1 = "assets/images/products/nike-shoes.png";
   static const String productImage2 = "assets/images/products/product-1.png";

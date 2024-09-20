@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:store/features/authentication/controllers.onboarding/onboarding_controller.dart';
+import 'package:store/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:store/utilis/constants/colors.dart';
 import 'package:store/utilis/constants/sizes.dart';
 import 'package:store/utilis/device/device_utility.dart';

@@ -119,6 +119,10 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
 
+  firebase_core: ^3.5.0
+  firebase_auth: ^5.3.0
+  cloud_firestore: ^5.4.2
+
   # Splash screen package
   flutter_native_splash: ^2.4.1
 
@@ -126,6 +130,8 @@ dependencies:
   http: ^1.1.0
   intl: ^0.18.1
   logger: ^2.0.1
+  lottie: ^3.1.2
+  connectivity_plus: ^6.0.5
   url_launcher: ^6.3.0
   smooth_page_indicator: ^1.2.0+3
  
@@ -134,6 +140,9 @@ dependencies:
   get: ^4.6.5
   get_storage: ^2.1.1
   iconsax: ^0.0.8
+
+  # //firebase
+  # firebase_core: ^3.5.0
 
 dev_dependencies:
   flutter_test:
