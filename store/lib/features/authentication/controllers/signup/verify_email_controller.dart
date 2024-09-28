@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:store/common/widgets/success_screen/success_screen.dart';
+
 import 'package:store/data/repositories/authentication/authentication_repository.dart';
 import 'package:store/utilis/constants/image_strings.dart';
 import 'package:store/utilis/constants/text_strings.dart';

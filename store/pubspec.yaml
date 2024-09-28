@@ -158,6 +158,7 @@ flutter:
     - assets/logos/
     - assets/icons/
     - assets/fonts/
+    - assets/icons/categories/
      
 
   # fonts:

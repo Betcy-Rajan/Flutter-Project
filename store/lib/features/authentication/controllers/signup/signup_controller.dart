@@ -72,6 +72,7 @@ class SignupController extends GetxController {
   } catch (e) {
     //Show Error Message
     TLoaders.errorSnackBar(title: 'An error occurred, please try again',message:e.toString());
+    TFullScreenLoader.stopLoading();
   }
   // } finally {
   //   //Remove Loader

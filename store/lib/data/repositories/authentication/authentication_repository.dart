@@ -4,8 +4,11 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:store/features/authentication/screens/login/login.dart';
+import 'package:store/features/authentication/screens/navigation.dart';
 import 'package:store/features/authentication/screens/onboarding/onboarding.dart';
+
 import 'package:store/features/authentication/screens/signup/verify_email.dart';
+import 'package:store/navigation_menu.dart';
 import 'package:store/utilis/exceptions/firebase_auth_exceptions.dart';
 import 'package:store/utilis/exceptions/firebase_exceptions.dart';
 import 'package:store/utilis/exceptions/format_exceptions.dart';
@@ -24,11 +27,11 @@ class AuthenticationRepository extends GetxController {
     FlutterNativeSplash.remove();
     screenRedirect();
   }
-  screenRedirect() async {
+   screenRedirect() async {
     User? user = _auth.currentUser;
     if(user != null) {
       if(user.emailVerified) {
-        Get.offAll(() => const LoginScreen());
+        Get.offAll(() => const NavigationMenu());
       } else {
         Get.offAll(() => VerifyEmailScreen(email: user.email));
       }
@@ -43,6 +46,21 @@ class AuthenticationRepository extends GetxController {
   }
 
   ///Email Authentication - Sign In
+  Future<UserCredential> signInWithEmailAndPassword(String email, String password) async {
+    try {
+      return await _auth.signInWithEmailAndPassword(email: email, password: password);
+    } on FirebaseAuthException catch (e) {
+      throw TFirebaseAuthException(e.code).message;
+    } on FirebaseException catch (e) {
+      throw TFirebaseException(e.code).message;
+    } on FormatException catch (_) {
+      throw const TFormatException();
+    } on PlatformException catch (e) {
+      throw TPlatformException(e.code).message;
+    } catch (e) {
+      throw 'Something went wrong.Please try again';
+    }
+  }
   
   ///Email Authentication - Register
   Future<UserCredential> registerWithEmailAndPassword(String email, String password) async {
@@ -80,6 +98,21 @@ class AuthenticationRepository extends GetxController {
     }
   }
   ///EmailAuthentication - Forgot Password
+    Future<void> sendPasswordResetEmail(String email) async {
+    try {
+      await _auth.sendPasswordResetEmail(email:email);
+    } on FirebaseAuthException catch (e) {
+      throw TFirebaseAuthException(e.code).message;
+    } on FirebaseException catch (e) {
+      throw TFirebaseException(e.code).message;
+    } on FormatException catch (_) {
+      throw const TFormatException();
+    } on PlatformException catch (e) {
+      throw TPlatformException(e.code).message;
+    } catch (e) {
+      throw 'Something went wrong.Please try again';
+    }
+  }
   
 
   ///Google Authentication - Google
