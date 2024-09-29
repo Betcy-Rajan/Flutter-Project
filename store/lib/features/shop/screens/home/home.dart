@@ -1,18 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-
-
 import 'package:store/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:store/common/widgets/custom_shapes/containers/search_container.dart';
-
 import 'package:store/common/widgets/texts/sections_heading.dart';
-
 import 'package:store/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:store/features/shop/screens/home/widgets/home_categories.dart';
-
-
-
+import 'package:store/features/shop/screens/home/widgets/promo_slider.dart';
+import 'package:store/utilis/constants/image_strings.dart';
 import 'package:store/utilis/constants/sizes.dart';
+
 
 
 
@@ -27,9 +23,8 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            TPrimaryHeaderContainer(
-
-              child:  Column(
+             TPrimaryHeaderContainer(
+               child:  Column(
                 children: [
                   THomeAppBar(),
                    SizedBox(height: TSizes.spaceBtwSections,),
@@ -59,8 +54,10 @@ class HomeScreen extends StatelessWidget {
 
                 ],
               ),
-            )
-            ,
+            ),
+             TPromoSlider(
+              banners: [ TImages.promoBanner1,TImages.promoBanner2, TImages.promoBanner3,],),
+            
           ],
         ),
 
@@ -68,6 +65,9 @@ class HomeScreen extends StatelessWidget {
       );
   }
 }
+
+
+
 
 
 

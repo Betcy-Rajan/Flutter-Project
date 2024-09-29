@@ -134,6 +134,7 @@ dependencies:
   connectivity_plus: ^6.0.5
   url_launcher: ^6.3.0
   smooth_page_indicator: ^1.2.0+3
+  carousel_slider: ^5.0.0
  
 
   # State management
@@ -159,6 +160,7 @@ flutter:
     - assets/icons/
     - assets/fonts/
     - assets/icons/categories/
+    - assets/images/banners/
      
 
   # fonts:
