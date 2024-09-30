@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 import 'package:iconsax/iconsax.dart';
 import 'package:store/features/shop/screens/home/home.dart';
+import 'package:store/features/shop/screens/store/store.dart';
 import 'package:store/utilis/constants/colors.dart';
 import 'package:store/utilis/helpers/helper_functions.dart';
 
@@ -40,7 +41,7 @@ class NavigationMenu extends StatelessWidget {
 }
 class NavigationMenuController extends GetxController {
   final RxInt selectedIndex = 0.obs;
-  final screens = [const HomeScreen(),Container(color: Colors.green,),Container(color: Colors.purple,),Container(color: Colors.yellow,)];
+  final screens = [const HomeScreen(),const StoreScreen(),Container(color: Colors.purple,),Container(color: Colors.yellow,)];
   void updateIndex(int index) {
     selectedIndex.value = index;
   }
